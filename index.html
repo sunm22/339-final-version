@@ -171,14 +171,11 @@
 
 	<!-- Every page should have a main tag for accessibility -->
 	<main id = "main">
-		<div id="animated_img">
-			<img class = "bottom" src = "images/family-1.JPG" alt = "minnie's family during her brother's 14th birthday dinner" width="200"/>
-			<img class = "top" src = "images/family-2.JPG" alt = "minnie's family during her 20th birthday dinner" width="200"/>
-			<video width="400" height="200" controls>
-				<source src="./cello_video.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-			  </video>
+		<div class="animated_img">
+			<img src = "images/family-1.JPG" alt = "minnie's family during her brother's 14th birthday dinner" width="200"/>
+			<img src = "images/family-2.JPG" alt = "minnie's family during her 20th birthday dinner" width="250"/>
 		</div>
+		<h2>About Me</h2>
 		<p>Hi there! My name is Minnie, currently a senior pursuing a dual degree in the School of Information
 			and the Ross Business School at the University of Michigan. I'm creating this site as part of SI 339:
 			Web Design, Development, and Accessibility. I'm in my final semester here at Michigan, and one of the things I
@@ -186,6 +183,7 @@
 		</p>
 
 		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
+		<h2>About My Family</h2>
 		<p>Growing up, food was a vital and central part of my family's culture and values. For some background, my family is
 			made up of me, my mom, my dad, and my younger brother. Our hometown is Tianjin, China, a place known for some
 			delectable dishes. We have a lot of family traditions revolving around food. For example, we don't start our meals
@@ -202,19 +200,19 @@
 	</main>
 	
 	<form action="https://formspree.io/f/mvolqajp" method = "POST">
-		    <fieldset> 
-		    <legend>Visitor Information:</legend>
-		    <label for="name">Name</label>
-		    <input type="text" id = "name" name = "name"><br/>
-		    <label> Email: 
-		    <input type="email" value = "email@umich.edu">
-		    </label><br/>
-		    <label for="favfood">Favorite Food:</label>
-		    <input type="text" id = "favfood" name = "name"><br>
-				<label for="favdessert">Favorite Dessert:</label>
-		        <input type="text" id = "favdessert" name = "name"><br>
-		        <input type = "submit" value = "Save!" name = "name">
-		    </fieldset>
+		<fieldset> 
+		<legend><h2>About You!</h2></legend>
+		<label for="name">Name:</label>
+		<input type="text" id = "name" name = "name"><br/>
+		<label>Email: 
+		<input type="email" value = "email@umich.edu">
+		</label><br/>
+		<label for="favfood">Favorite Food:</label>
+		<input type="text" id = "favfood" name = "name"><br>
+		<label for="favdessert">Favorite Dessert:</label>
+		<input type="text" id = "favdessert" name = "name"><br>
+		<input type = "submit" value = "Save!" name = "name">
+		</fieldset>
 	</form>
 
 	<!-- Footer is a sematic tag page that aids readability -->
