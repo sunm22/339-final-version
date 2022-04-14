@@ -33,9 +33,9 @@
 
 <!-- All of the visible code in the page belongs in the body tag -->
 <body>
-	<a class="skip" href="#main">Skip to Main Content</a>
 	<!-- Header is a sematic tag page that aids readability -->
 	<header>
+		<a class="skip" href="#main" tabindex="0">Skip to Main Content</a>
 		<!-- Nav is a sematic tag page that aids accessibility -->
 		<nav>
 			<ul>
@@ -43,11 +43,11 @@
 				<li class="active"><a href = "index.html" >About My Family</a></li>
 				<li><a href = "recipes.html">Mom's Recipes</a></li>
 				<li><a href = "memorable_dishes.html">Memorable Dishes</a></li>
-				<li><a href = "traditions.html">Chinese Traditions</a></li>
+				<li><a href = "contact.html">Contact</a></li>
 			</ul>
 			<form role="search" class="form" id = "search_bar" action="https://www.allrecipes.com/search" method="get" target="_blank" autocomplete="off">
 				<div class="autocomplete">
-					<input id="query" type="search" name="q" autofocus size="50" placeholder="Find a recipe" aria-label="Redirects to Allrecipes">
+					<input id="query" type="search" name="q" placeholder="Find a recipe" aria-label="Redirects to Allrecipes">
 				</div>
 				<button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search on Allrecipes</button>
 			</form>
@@ -171,16 +171,24 @@
 
 	<!-- Every page should have a main tag for accessibility -->
 	<main id = "main">
-		<div class="animated_img">
-			<img src = "images/family-1.JPG" alt = "minnie's family during her brother's 14th birthday dinner" width="200"/>
-			<img src = "images/family-2.JPG" alt = "minnie's family during her 20th birthday dinner" width="250"/>
-		</div>
-		<h2>About Me</h2>
+		<h2>Introduction</h2>
 		<p>Hi there! My name is Minnie, currently a senior pursuing a dual degree in the School of Information
 			and the Ross Business School at the University of Michigan. I'm creating this site as part of SI 339:
 			Web Design, Development, and Accessibility. I'm in my final semester here at Michigan, and one of the things I
 			already know I'll miss the most when I move cities after graduation is my family's cooking.
 		</p>
+
+		<div class="animated_container">
+			<div class = "animated_div">
+				<img class = "animated_img" src = "images/zion-sitting.jpeg" alt = "minnie's family at national park" width="200"/>
+			</div>
+			<div class = "animated_div">
+				<img class = "animated_img" src = "images/family-2.JPG" alt = "minnie's family during her 20th birthday dinner" width="200"/>
+			</div>
+			<div class = "animated_div">
+				<img class = "animated_img" src = "images/zion-walking.jpeg" alt = "minnie walking with brother in national park" width="200"/>
+			</div>
+		</div>
 
 		<!-- Make sure your anchor tags have a link (href) and a clickable component -->
 		<h2>About My Family</h2>
@@ -197,23 +205,8 @@
 			That starts with documenting the dishes I love most, which I'll be doing on this site!
 		</p>
 
+
 	</main>
-	
-	<form action="https://formspree.io/f/mvolqajp" method = "POST">
-		<fieldset> 
-		<legend><h2>About You!</h2></legend>
-		<label for="name">Name:</label>
-		<input type="text" id = "name" name = "name"><br/>
-		<label>Email: 
-		<input type="email" value = "email@umich.edu">
-		</label><br/>
-		<label for="favfood">Favorite Food:</label>
-		<input type="text" id = "favfood" name = "name"><br>
-		<label for="favdessert">Favorite Dessert:</label>
-		<input type="text" id = "favdessert" name = "name"><br>
-		<input type = "submit" value = "Save!" name = "name">
-		</fieldset>
-	</form>
 
 	<!-- Footer is a sematic tag page that aids readability -->
 	<footer>

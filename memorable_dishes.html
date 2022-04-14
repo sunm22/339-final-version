@@ -28,11 +28,12 @@
 
 	gtag('config', 'G-EKXEMW9LBW');
 	</script>
-	<title>About My Family</title>
+	<title>Memorable Dishes</title>
 </head>
 
 <!-- All of the visible code in the page belongs in the body tag -->
 <body>
+	<a class="skip" href="#main">Skip to Main Content</a>
 	<!-- Header is a sematic tag page that aids readability -->
 	<header>
 		<!-- Nav is a sematic tag page that aids accessibility -->
@@ -41,11 +42,11 @@
 				<li><a href = "index.html" >About My Family</a></li>
 				<li><a href = "recipes.html">Mom's Recipes</a></li>
 				<li class="active"><a href = "memorable_dishes.html">Memorable Dishes</a></li>
-				<li><a href = "traditions.html">Chinese Traditions</a></li>
+				<li><a href = "contact.html">Contact</a></li>
 			</ul>
 			<form role="search" class="form" id = "search_bar" action="https://www.allrecipes.com/search" method="get" target="_blank" autocomplete="off">
 				<div class="autocomplete">
-					<input id="query" type="search" name="q" autofocus size="50" placeholder="Find a recipe" aria-label="Redirects to Allrecipes">
+					<input id="query" type="search" name="q" placeholder="Find a recipe" aria-label="Redirects to Allrecipes">
 				</div>
 				<button type="submit"><i class="fa-solid fa-magnifying-glass"></i> Search on Allrecipes</button>
 			</form>
@@ -170,28 +171,53 @@
 		<p>
 			Many times, what makes a dish taste great is not only the objective taste itself, but also the memories associated with it. A familiar taste from childhood or one associated with another great memory can subconsciously make it much more tasty than it would to someone without those associations. That's why I also thought it'd be fun to document dishes that I have vivid memories of, on top of the delicious everyday dishes I included in Mom's Recipes. Some of those dishes are included below.
 		</p>
-		<div class = "flex_div">
+		<div class = "flex_container">
 			<!-- Make sure your anchor tags have a link (href) and a clickable component -->
 			<div class = "flex_div">
 				<img class = "flex_img" src = "images/for-memorable-dishes/baozi.png" alt = "Chinese dumplings" width="200"/>
-				<p>Dumplings are a traditional Chinese staple! Some of my favorite memories in the kitchen are with all four members of my family each working on a different aspect of the dumpling making process. My dad makes the filling, my mom and I mold the flour and create the dumpling, and my brother boils the dumplings.</p>
+				<p class="flex_label">Dumplings (baozi)</p>
+				<p> Some of my favorite memories in the kitchen are with all four members of my family each working on a different aspect of the dumpling making process. My dad makes the filling, my mom and I mold the flour and create the dumpling, and my brother boils the dumplings.</p>
 			</div>
-			<img class = "flex_img" src = "images/for-memorable-dishes/charcuterie.jpg" alt = "charcuterie board" width="200"/><br>
-			<img class = "flex_img" src = "images/for-memorable-dishes/mushroom-fish.png" alt = "broiled fish with mushrooms" width="200"/><br>
+			<div class = "flex_div">
+				<img class = "flex_img" src = "images/for-memorable-dishes/charcuterie.jpg" alt = "charcuterie board" width="200"/><br>
+				<p class="flex_label">Charcuterie Board</p>
+				<p>I made a few charcuterie boards with friends at school, so of course I went home and showed my parents pictures so we could make one too! My dad went a bit overboard and bought 7 different types of cheeses.</p>
+			</div>
 			<div class = "flex_div">
 				<img class = "flex_img" src = "images/for-memorable-dishes/noodles.png" alt = "longevity noodes" width="200"/><br>
+				<p class="flex_label">Noodles (chang shou mian)</p>
 				<p>Noodles are eaten on birthdays to usher in continued longevity. Birthday noodles are often called "chang shou mian" or longevity noodles, and are made with one long noodle that has no breaks as symbolizing a long life.</p>
 			</div>
-			<img class = "flex_img" src = "images/for-memorable-dishes/pizza-1.JPG" alt = "pizza" width="200"/>
+			<div class = "flex_div">
+				<img class = "flex_img" src = "images/for-memorable-dishes/pizza-1.JPG" alt = "pizza" width="200"/>
+				<p class="flex_label">Homemade Pizza</p>
+				<p>My family primarily eats Chinese cuisine, but we also like venturing out into other cuisines. Here are the results from a pizza night we had. It was absolutely delicious!</p>
+			</div>
 			<div class = "flex_div">
 				<img class = "flex_img" src = "images/for-memorable-dishes/pizza-2.JPG" alt = "Hawaiian pizza" width="200"/>
-				<p>My family primarily eats Chinese cuisine, but we also like venturing out into other cuisines. Here are the results from a pizza night we had. It was absolutely delicious! Unfortunately my entire family is lactose intolerant. I don't know why we chose pizza.</p>
+				<p class="flex_label">Homemade Pizza pt 2</p>
+				<p>More pizza pictures! As a side note, unfortunately my entire family is lactose intolerant. I don't know why we chose to make pizza.</p>
 			</div>
-			<img class = "flex_img" src = "images/for-memorable-dishes/plated-fish.png" alt = "well plated white fish" width="200"/><br>
-			<img class = "flex_img" src = "images/for-memorable-dishes/seasame-balls.png" alt = "seasame balls" width="200"/><br>
-			<img class = "flex_img" src = "images/for-memorable-dishes/thanksgiving-dinner.JPG" alt = "Thanksgiving feast" width="200"/><br>
-			<img class = "flex_img" src = "images/for-memorable-dishes/wood-ear-lu.png" alt = "noodle dipping sauce" width="200"/><br>
-			<img class = "flex_img" src = "images/for-memorable-dishes/youtiao.png" alt = "fried dough" width="200"/><br>
+			<div class = "flex_div">
+				<img class = "flex_img" src = "images/for-memorable-dishes/plated-fish.png" alt = "well plated white fish" width="200"/><br>
+				<p class="flex_label">Fish Dishes</p>
+				<p>Fish is a big staple in my family's meals. My mom loves plating food, so here is one of her nicely plated fish dishes!</p>
+			</div>
+			<div class = "flex_div">
+				<img class = "flex_img" src = "images/for-memorable-dishes/seasame-balls.png" alt = "seasame balls" width="200"/><br>
+				<p class="flex_label">Sesame Balls</p>
+				<p>Sesame balls are a sweet, crunchy, fried dessert that is delicious to munch on at the end of a meal. It's one of my favorite Chinese desserts, and this was my mom's first attempt at making them at home.</p>
+			</div>
+			<div class = "flex_div">
+				<img class = "flex_img" src = "images/for-memorable-dishes/youtiao.png" alt = "fried dough" width="200"/><br>
+				<p class="flex_label">Fried Dough (youtiao)</p>
+				<p>Fried dough and homemade soymilk is one of the best and most traditional Chinese breakfasts out there. It might sound too heavy for breakfast, but youtiao are nice and light!</p>
+			</div>
+			<div class = "flex_div" id = "thanksgiving_meal">
+				<img class = "flex_img" src = "images/for-memorable-dishes/thanksgiving-dinner.JPG" alt = "Thanksgiving feast" width="200"/><br>
+				<p class="flex_label">A Thanksgiving Feast</p>
+				<p>Meals are best shared with good company! This is the food spread from a Thanksgiving meal we shared with family friends last year. </p>
+			</div>
 		</div>
 	</main>
 
